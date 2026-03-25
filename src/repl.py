@@ -1,6 +1,9 @@
+from prettytable import PrettyTable
+
 from src.books.book import Book
 from src.books.book_service import BookService
 from src.books.book_repository import BookRepository
+
 
 class BookREPL:
     def __init__(self, book_svc):
@@ -36,8 +39,18 @@ class BookREPL:
             print(f'An unexpected error has occurred: {e}')
 
     def get_all_books(self):
+        table = PrettyTable()
+        table.field_names = ["Book_ID", "Title", "Author"]
         books = self.book_svc.get_all_books()
-        print(books)
+        
+        for book in books:
+            table.add_row([
+                book.book_id,
+                book.title,
+                book.author
+            ])
+
+        print(table)
 
 if __name__ == '__main__':
     repo = BookRepository('books.json')

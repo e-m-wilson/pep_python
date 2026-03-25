@@ -1,6 +1,6 @@
 [
   {
-    "book_id": "1e69a8e1-c9d5-4893-8293-ce4689f997d4",
+    "book_id": "b9acf142-4d8e-4bad-832b-96175fb914ac",
     "title": "Test",
     "author": "Ethan",
     "genre": null,
@@ -17,9 +17,26 @@
     "available": null
   },
   {
-    "book_id": "ad2e3a4c-de0f-4c29-994d-1e98c1d96f28",
+    "book_id": "78fc25cb-3142-4191-8874-a547c21e398a",
     "title": "Test2",
     "author": "Ethan",
+    "genre": null,
+    "publication_year": null,
+    "page_count": null,
+    "average_rating": null,
+    "ratings_count": null,
+    "price_usd": null,
+    "publisher": null,
+    "language": null,
+    "format": null,
+    "in_print": null,
+    "sales_millions": null,
+    "available": null
+  },
+  {
+    "book_id": "4c886e76-20e0-49dd-83fd-5c5bee6504ed",
+    "title": "test3",
+    "author": "ethan",
     "genre": null,
     "publication_year": null,
     "page_count": null,

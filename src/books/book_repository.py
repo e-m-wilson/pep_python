@@ -2,8 +2,9 @@ import json
 import os
 from src.books.book import Book
 from src.books.book_repository_protocol import BookRepositoryProtocol
+from src.books.book_repository_abc import BookRepositoryABC
 
-class BookRepository(BookRepositoryProtocol):
+class BookRepository(BookRepositoryABC):
     def __init__(self, filepath: str="books.json"):
         self.filepath = filepath
 
