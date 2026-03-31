@@ -11,4 +11,3 @@ sqlalchemy
 sqlalchemy-utils
 psycopg[binary]
 alembic
-python-dotenv
