@@ -25,6 +25,7 @@ class BookRead(BaseModel):
     title: str
     author: str
     available: bool
+    genre: Optional[str] = None
 
     model_config = ConfigDict(
         from_attributes = True

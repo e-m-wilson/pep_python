@@ -1,16 +1,9 @@
-from pydantic import BaseModel
-from dotenv import load_dotenv
-import os
+from pydantic_settings import BaseSettings
 
-load_dotenv()
-
-class Settings(BaseModel):
+class Settings(BaseSettings):
     DATABASE_URL: str
-    ENV: str = 'development'
-    DEBUG: bool = False
 
-settings = Settings(
-    DATABASE_URL = os.getenv("DATABASE_URL"),
-    ENV = os.getenv("ENV", "development"),
-    DEBUG = os.getenv("DEBUG", "false")
-)
+    class Config:
+        env_file = '.env'
+
+settings = Settings()

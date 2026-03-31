@@ -6,6 +6,7 @@ matplotlib
 fastapi
 uvicorn
 pydantic
+pydantic-settings
 sqlalchemy
 sqlalchemy-utils
 psycopg[binary]

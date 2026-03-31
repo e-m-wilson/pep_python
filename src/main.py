@@ -27,10 +27,6 @@ def get_book_service(repo: BookRepositorySQL = Depends(get_book_repository)) -> 
     return BookService(repo)
 
 
-
-
-
-
 '''
         ENDPOINTS
 '''
